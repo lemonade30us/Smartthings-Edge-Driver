@@ -1,0 +1,20 @@
+name: zwave-metering-switch-v1
+components:
+- id: main
+  capabilities:
+  - id: switch
+    version: 1
+  - id: powerMeter
+    version: 1
+  - id: energyMeter
+    version: 1
+  - id: refresh
+    version: 1
+  - id: momentary
+    version: 1
+  categories:
+  - name: SmartPlug
+metadata:
+  vid: 68071cb0-4d30-3c8f-82e9-23448dadac16
+  mnmn: SmartThingsCommunity
+  ocfDeviceType: oic.d.smartplug

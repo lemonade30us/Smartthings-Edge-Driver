@@ -1,0 +1,4 @@
+name: 'Z-Wave Metering Switch v1'
+packageKey: 'zwave-metering-switch-v1'
+permissions:
+  zwave: {}
