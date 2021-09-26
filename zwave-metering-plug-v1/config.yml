@@ -1,0 +1,4 @@
+name: 'Z-Wave Metering Plug Power Consumption Report V1'
+packageKey: 'zwave-metering-plug-v1'
+permissions:
+  zwave: {}

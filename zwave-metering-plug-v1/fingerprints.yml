@@ -1,0 +1,21 @@
+zwaveManufacturer:
+  - id: "dawon/0x018C/0x0042"
+    deviceLabel: Dawon Zwave Plug
+    manufacturerId: 0x018C
+    productType: 0x0042
+    deviceProfileName: zwave-metering-plug-v1
+  - id: "dawon/0x018C/0x0052"
+    deviceLabel: Dawon Zwave Plug
+    manufacturerId: 0x018C
+    productType: 0x0052
+    deviceProfileName: zwave-metering-plug-v1
+  - id: "dawon/0x0247/0x0042"
+    deviceLabel: Dawon Zwave Plug
+    manufacturerId: 0x0247
+    productType: 0x0042
+    deviceProfileName: zwave-metering-plug-v1
+  - id: "dawon/0x0247/0x0052"
+    deviceLabel: Dawon Zwave Plug
+    manufacturerId: 0x0247
+    productType: 0x0052
+    deviceProfileName: zwave-metering-plug-v1

@@ -1,0 +1,16 @@
+zwaveManufacturer:
+  - id: "ZemismartWindowShade"
+    deviceLabel: Zemismart Window Shade
+    manufacturerId: 0x032C
+    productType: 0x3007
+    productId: 0x0005
+    deviceProfileName: zwave-zemi-windowShade
+#zwaveGeneric:
+#  - id: "GeneriWindowShade"
+#    deviceLabel: Generic Window Shade
+#    commandClasses:
+#      supported:
+#        - 0x6A # Window Covering
+#        - 0x50 # Basic Window Covering
+#        - 0x51 # Mtp Window Covering
+#    deviceProfileName: base-electric-windowShade

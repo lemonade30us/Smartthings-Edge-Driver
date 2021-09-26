@@ -1,0 +1,4 @@
+name: 'ZWave Zemi WindowShade'
+packageKey: 'zwave-zemi-windowshade'
+permissions:
+  zwave: {}
