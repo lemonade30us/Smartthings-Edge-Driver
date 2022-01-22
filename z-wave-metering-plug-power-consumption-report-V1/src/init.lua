@@ -1,4 +1,4 @@
--- Zwave Metering Plug ver 0.1.1
+-- Zwave Metering Plug ver 1.1
 -- Copyright 2021 jido1517
 --F
 -- Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,6 +24,7 @@ local Meter = (require "st.zwave.CommandClass.Meter")({ version=3 })
 local cc = require "st.zwave.CommandClass"
 local POWER_UNIT_WATT = "W"
 local ENERGY_UNIT_KWH = "kWh"
+local Notification = (require "st.zwave.CommandClass.Notification")({ version = 3 })
 --------------------------------------------------------------------------------------------
 -- Register message handlers and run driver
 --------------------------------------------------------------------------------------------
@@ -52,6 +53,16 @@ local function meter_report_handler(self, device, cmd)
   end
 end
 
+local function notification_report_handler(self, device, cmd)
+  if cmd.args.notification_type == Notification.notification_type.POWER_MANAGEMENT then
+    if cmd.args.event == Notification.event.power_management.AC_MAINS_DISCONNECTED then
+      device:emit_event(capabilities.switch.switch.off())
+    elseif cmd.args.event == Notification.event.power_management.AC_MAINS_RE_CONNECTED then
+      device:emit_event(capabilities.switch.switch.on())
+    end
+  end
+end
+
 local function momentary_reset_handler(driver, device, command)
   device:send(Meter:Reset({}))
   device:refresh()
@@ -65,6 +76,9 @@ local driver_template = {
   zwave_handlers = {
     [cc.METER] = {
       [Meter.REPORT] = meter_report_handler
+    },
+    [cc.NOTIFICATION] = {
+      [Notification.REPORT] = notification_report_handler
     }
   },
   supported_capabilities = {
