@@ -1,0 +1,16 @@
+zigbeeManufacturer:
+  - id: "_TZ3000_w0qqde0g/TS011F"
+    deviceLabel: "Tuya Outlet"
+    manufacturer: _TZ3000_w0qqde0g
+    model: TS011F
+    deviceProfileName: metering-plug
+  - id: "_TZ3000_gjnozsaz/TS011F"
+    deviceLabel: "Tuya Outlet"
+    manufacturer: _TZ3000_gjnozsaz
+    model: TS011F
+    deviceProfileName: metering-plug
+  - id: "_TZ3000_zloso4jk/TS011F"
+    deviceLabel: "Tuya Outlet"
+    manufacturer: _TZ3000_zloso4jk
+    model: TS011F
+    deviceProfileName: metering-plug

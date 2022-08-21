@@ -1,0 +1,40 @@
+name: zigbee-multichannel-4
+components:
+- id: main
+  capabilities:
+  - id: switch
+    version: 1
+  - id: trustsmile56703.text
+    version: 1
+  categories:
+  - name: Switch
+- id: switch2
+  capabilities:
+  - id: switch
+    version: 1
+  categories:
+  - name: Switch
+- id: switch3
+  capabilities:
+  - id: switch
+    version: 1
+- id: switch4
+  capabilities:
+  - id: switch
+    version: 1
+  categories:
+  - name: Switch
+metadata:
+  vid: 0953d9c3-7cc0-35b1-b6b7-d9ab38c0efb0
+  mnmn: SmartThingsCommunity
+  ocfDeviceType: oic.d.switch
+preferences:
+  - name: "numberOfComponents"
+    title: "Number Of Components"
+    description: "number of components 1~6"
+    required: false
+    preferenceType: integer
+    definition:
+      minimum: 1
+      maximum: 6
+      default: 3

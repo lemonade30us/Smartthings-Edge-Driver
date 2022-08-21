@@ -1,0 +1,4 @@
+name: 'Zigbee Multi Switch Goqual Custom'
+packageKey: 'zigbee-multi-switch-goqual-custom'
+permissions:
+  zigbee: {}

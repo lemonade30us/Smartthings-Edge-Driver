@@ -1,0 +1,24 @@
+dashboard:
+  states:
+    - label: '{{text.value}}'
+      alternatives: null
+  actions: []
+  basicPlus: []
+detailView:
+  - label: 사용자정의
+    displayType: state
+    state:
+      label: '{{text.value}}'
+automation:
+  conditions:
+    - label: 사용자정의문자
+      displayType: textField
+      textField:
+        value: text.value
+  actions:
+    - label: 사용자정의
+      displayType: textField
+      textField:
+        command: setText
+id: trustsmile56703.text
+version: 1

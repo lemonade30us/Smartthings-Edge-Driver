@@ -1,0 +1,4 @@
+name: 'Zigbee Metering Plug Tuya'
+packageKey: 'zigbee-metering-plug-tuya-jido'
+permissions:
+  zigbee: {}
